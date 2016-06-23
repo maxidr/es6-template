@@ -1,0 +1,19 @@
+{
+  "name": "es6-template",
+  "version": "1.0.0",
+  "description": "ES6 using babel and browserify base project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify index.js -o dist/bundle.js -t babelify",
+    "start": "budo index.js:dist/bundle.js --live -- -t babelify"
+  },
+  "author": "maxidr@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015": "6.9.0",
+    "babelify": "7.3.0",
+    "browserify": "13.0.1",
+    "budo": "8.3.0"
+  }
+}
